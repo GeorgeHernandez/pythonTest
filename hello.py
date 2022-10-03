@@ -1,15 +1,20 @@
+"""This is a Hello world test"""
 # Run me with: python hello.py
 # If VSC & Python extension installed,
 # then run by right-click to "Run Python File in Terminal"
-who = input()
-    print('Hello', who) # Purposeful unexpected indentation
-my_dict = {
-    'user': 'George', "address": '123 Main St',
-            'age': 25
-}
 
-def hello (name):
-    return"Hello"+name
-name = input("Enter your name: ")
-print(hello(name ))
+# Some random dictionary
+my_dict = {"user": "George", "address": "123 Main St", "age": 25}
 
+# Variant without unlabled input request:
+# who = input()
+# print("Hello", who)
+
+# Variant with unlabled input request:
+def hello(name):
+    """Take a name and respond"""
+    return "Hello " + name
+
+
+name_again = input("Enter your name: ")
+print(hello(name_again))
