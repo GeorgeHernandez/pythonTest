@@ -10,11 +10,11 @@ Every module should have a module-level docstring.
 # Some random dictionary
 my_dict = {"user": "George", "address": "123 Main St", "age": 25}
 
-# Variant without unlabled input request:
+# Variant without a labeled input request:
 # who = input()
 # print("Hello", who)
 
-# Variant with unlabled input request:
+# Variant with a labeled input request:
 def hello(name):
     """Take a name and respond."""
     return "Hello " + name
